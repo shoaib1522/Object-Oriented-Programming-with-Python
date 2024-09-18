@@ -1,0 +1,52 @@
+# ******************************* polytest.py
+# paste code from polytest.py
+from Poly import Polynomial
+
+def main():
+    # Test Case 1
+    Polynomial_variable1=Polynomial([2,0,0,3,2,1])
+    print(Polynomial_variable1)
+    Polynomial_variable2=Polynomial([2,0,0,-3,2,-1,5])
+    print(Polynomial_variable2)
+    print(f'The Degree Of Polynomial 1 is: ',Polynomial.degree(Polynomial_variable1))
+    print(f'The Degree Of Polynomial 2 is: ',Polynomial.degree(Polynomial_variable2))
+    print(f'The Evaluation at x=0 of Polynomial 1: ',Polynomial_variable1.evaluate(0))
+    print(f'The Evaluation at x=1 of Polynomial 1: ',Polynomial_variable1.evaluate(1))
+    print(f'The Evaluation at x=2 of Polynomial 1: ',Polynomial_variable1.evaluate(2))
+    print(f'The Evaluation at x=3 of Polynomial 1: ',Polynomial_variable1.evaluate(3))
+    print(f'The Evaluation at x=4 of Polynomial 1: ',Polynomial_variable1.evaluate(4))
+    print(f'The Evaluation at x=5 of Polynomial 1: ',Polynomial_variable1.evaluate(5))
+    print(f'The Evaluation at x=0 of Polynomial 2: ',Polynomial_variable2.evaluate(0))
+    print(f'The Evaluation at x=1 of Polynomial 2: ',Polynomial_variable2.evaluate(1))
+    print(f'The Evaluation at x=2 of Polynomial 2: ',Polynomial_variable2.evaluate(2))
+    print(f'The Evaluation at x=3 of Polynomial 2: ',Polynomial_variable2.evaluate(3))
+    print(f'The Evaluation at x=4 of Polynomial 2: ',Polynomial_variable2.evaluate(4))
+    print(f'The Evaluation at x=5 of Polynomial 2: ',Polynomial_variable2.evaluate(5))
+    print(f'The Addition of Polynomial 1 & Polynomial 2: ', (Polynomial_variable1+Polynomial_variable2))
+    print(f'The Subtraction of Polynomial 1 & Polynomial 2: ', (Polynomial_variable1-Polynomial_variable2))
+    print(f'The Multiplication of Polynomial 1 & Polynomial 2: ', (Polynomial_variable1*Polynomial_variable2))
+    # Test Case 2
+    Polynomial_variable1=Polynomial([2,0,3,2,1])
+    print(Polynomial_variable1)
+    Polynomial_variable2=Polynomial([2,0,0,2,-1,5])
+    print(Polynomial_variable2)
+    print(f'The Degree Of Polynomial 1 is: ',Polynomial.degree(Polynomial_variable1))
+    print(f'The Degree Of Polynomial 2 is: ',Polynomial.degree(Polynomial_variable2))
+    print(f'The Evaluation at x=0 of Polynomial 1: ',Polynomial_variable1.evaluate(0))
+    print(f'The Evaluation at x=1 of Polynomial 1: ',Polynomial_variable1.evaluate(1))
+    print(f'The Evaluation at x=2 of Polynomial 1: ',Polynomial_variable1.evaluate(2))
+    print(f'The Evaluation at x=3 of Polynomial 1: ',Polynomial_variable1.evaluate(3))
+    print(f'The Evaluation at x=4 of Polynomial 1: ',Polynomial_variable1.evaluate(4))
+    print(f'The Evaluation at x=5 of Polynomial 1: ',Polynomial_variable1.evaluate(5))
+    print(f'The Evaluation at x=0 of Polynomial 2: ',Polynomial_variable2.evaluate(0))
+    print(f'The Evaluation at x=1 of Polynomial 2: ',Polynomial_variable2.evaluate(1))
+    print(f'The Evaluation at x=2 of Polynomial 2: ',Polynomial_variable2.evaluate(2))
+    print(f'The Evaluation at x=3 of Polynomial 2: ',Polynomial_variable2.evaluate(3))
+    print(f'The Evaluation at x=4 of Polynomial 2: ',Polynomial_variable2.evaluate(4))
+    print(f'The Evaluation at x=5 of Polynomial 2: ',Polynomial_variable2.evaluate(5))
+    print(f'The Addition of Polynomial 1 & Polynomial 2: ', (Polynomial_variable1+Polynomial_variable2))
+    print(f'The Subtraction of Polynomial 1 & Polynomial 2: ', (Polynomial_variable1-Polynomial_variable2))
+    print(f'The Multiplication of Polynomial 1 & Polynomial 2: ', (Polynomial_variable1*Polynomial_variable2))
+
+if __name__ == "__main__":
+    main()
