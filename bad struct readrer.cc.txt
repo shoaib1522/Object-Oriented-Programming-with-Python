@@ -1,0 +1,59 @@
+#include <cstdio>
+#include <cstdlib>
+
+
+struct BMP
+{
+  char Type[2];
+  unsigned long Size;
+  unsigned long Reserved;
+  unsigned long OffSet;
+  unsigned long headsize;
+  unsigned long Width;
+  unsigned long Height;
+  unsigned short Planes;
+  unsigned short BitsPerPixel;
+  unsigned long Compression;
+  unsigned long SizeImage;
+  unsigned long XPixelsPreMeter;
+  unsigned long YPixelsPreMeter;
+  unsigned long ColorsUsed;
+  unsigned long ColorsImportant;
+};
+
+int main()
+{
+    int b,a;
+    struct BMP img;
+
+    unsigned char* Datas;
+    int in=0;
+    unsigned char c=0;
+
+    FILE * fp;
+    fp = fopen("test.bmp","rb");
+    if(!fp){
+    	printf("Error : Unable to open file ..");
+    	exit(0);
+    }
+
+    fread(&img, 54, 1, fp);
+
+  	printf("%c%c\n", img.Type[0], img.Type[1]);
+  	printf("%d\n", img.Size);
+  	printf("%d\n", img.Reserved);
+  	printf("%d\n", img.OffSet);
+  	printf("%d\n", img.headsize);
+  	printf("%d\n", img.Width);
+  	printf("%d\n", img.Height);
+  	printf("%d\n", img.Planes);
+  	printf("%d\n", img.BitsPerPixel);
+  	printf("%d\n", img.Compression);
+  	printf("%d\n", img.SizeImage);
+  	printf("%d\n", img.XPixelsPreMeter);
+  	printf("%d\n", img.YPixelsPreMeter);
+  	printf("%d\n", img.ColorsUsed);
+  	printf("%d\n", img.ColorsImportant);
+
+    fclose(fp);
+}
